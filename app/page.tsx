@@ -25,7 +25,10 @@ export default function Home() {
       dayTime: "یکشنبه",
       timeSlotsArray: [
         null,
-        null,
+        {
+          title: "اخلاق کاربردی",
+          isEveryOtherWeek: "سعی دارم تا کنسلش کنم",
+        },
         null,
         null,
         {
