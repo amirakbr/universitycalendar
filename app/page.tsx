@@ -232,7 +232,7 @@ const DayTimeHoursContainer = ({
             <hr className="border-t w-full" />
             <p>{item?.title ?? "شرکت تشریف دارم"}</p>
             <hr className="border-t w-full" />
-            {item?.isEveryOtherWeek === weekType && <p className="text-sm absolute bottom-[100%] bg-green-900 text-white w-full left-0 rounded">این هفته این کلاس رو میرم</p>}
+            {item?.isEveryOtherWeek === weekType && <p className="text-sm absolute bottom-[95%] bg-green-900 text-white w-full left-0 rounded">این هفته این کلاس رو میرم</p>}
             {item?.isEveryOtherWeek ? (
               <span className="text-sm">
                 فقط هفته های {item.isEveryOtherWeek}
