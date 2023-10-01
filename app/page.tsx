@@ -221,7 +221,7 @@ const DayTimeHoursContainer = ({
       {timeSlotsArray &&
         timeSlotsArray.map((item: any, id: number) => (
           <div
-            className={`font-medium text-center border rounded p-2 w-full gap-2 grid grid-cols-1 grid-rows-[1fr_2px_1fr_2px_1fr] ${
+            className={`font-medium text-center border rounded p-2 w-full gap-2 grid grid-cols-1 relative grid-rows-[1fr_2px_1fr_2px_1fr] ${
               item?.title ? "bg-red-200" : "bg-green-200"
             } ${item?.isEveryOtherWeek && "bg-yellow-200"}`}
           >
@@ -232,9 +232,7 @@ const DayTimeHoursContainer = ({
             <hr className="border-t w-full" />
             <p>{item?.title ?? "شرکت تشریف دارم"}</p>
             <hr className="border-t w-full" />
-            <p>
-              {item?.isEveryOtherWeek ===weekType && <p>کییییییییییر</p>}
-            </p>
+            {item?.isEveryOtherWeek === weekType && <p className="text-sm absolute bottom-[100%] bg-green-900 text-white w-full left-0 rounded">این هفته این کلاس رو میرم</p>}
             {item?.isEveryOtherWeek ? (
               <span className="text-sm">
                 فقط هفته های {item.isEveryOtherWeek}
