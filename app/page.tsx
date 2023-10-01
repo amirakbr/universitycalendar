@@ -1,6 +1,13 @@
 import { Vazirmatn } from "next/font/google";
 const VazirFont = Vazirmatn({ subsets: ["arabic"] });
-
+let StarterPointDate = new Date("2023-09-22T23:59:59.000Z").getTime();
+let TodayPointDate = new Date().getTime();
+let weekType =
+  Math.ceil((TodayPointDate - StarterPointDate) / (1000 * 3600 * 24) / 7) %
+    2 ===
+  1
+    ? "فرد"
+    : "زوج";
 export default function Home() {
   const Data = [
     {
@@ -24,11 +31,11 @@ export default function Home() {
     {
       dayTime: "یکشنبه",
       timeSlotsArray: [
-        null,
         {
-          title: "اخلاق کاربردی",
-          isEveryOtherWeek: "سعی دارم تا کنسلش کنم",
+          title: "اخلاق کاربردی بردمش ساعت 8 صب",
+          isEveryOtherWeek: "",
         },
+        null,
         null,
         null,
         {
@@ -121,9 +128,6 @@ export default function Home() {
     " جمعه ",
     " شنبه ",
   ];
-
-  let StarterPointDate = new Date("2023-09-22T23:59:59.000Z").getTime();
-  let TodayPointDate = new Date().getTime();
   return (
     <div className={`flex flex-col gap-2 px-2 ${VazirFont.className}`}>
       <h1 className="text-xl">برنامه هفتگی دانشگاهی اینجانب</h1>
@@ -138,9 +142,7 @@ export default function Home() {
             : "دارم"}
         </span>
       </p>
-      <span>
-        این هفته ، هفته ی {Math.ceil((TodayPointDate-StarterPointDate) / (1000 * 3600 * 24)/7)%2 === 1 ? "فرد" : "زوج"} میباشد
-      </span>
+      <span>این هفته ، هفته ی {weekType} میباشد</span>
       <div className="flex items-center gap-4">
         <div className="text-lg">راهنما :</div>
         <div className="flex gap-2 items-center">
@@ -230,6 +232,9 @@ const DayTimeHoursContainer = ({
             <hr className="border-t w-full" />
             <p>{item?.title ?? "شرکت تشریف دارم"}</p>
             <hr className="border-t w-full" />
+            <p>
+              {item?.isEveryOtherWeek ===weekType && <p>کییییییییییر</p>}
+            </p>
             {item?.isEveryOtherWeek ? (
               <span className="text-sm">
                 فقط هفته های {item.isEveryOtherWeek}
