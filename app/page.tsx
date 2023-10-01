@@ -32,7 +32,7 @@ export default function Home() {
       dayTime: "یکشنبه",
       timeSlotsArray: [
         {
-          title: "اخلاق کاربردی بردمش ساعت 8 صب",
+          title: "اخلاق کاربردی",
           isEveryOtherWeek: "",
         },
         null,
@@ -167,7 +167,7 @@ export default function Home() {
             ساعات کاری اینجانب 🤳🐱‍👤🐱‍👓🐱‍🐉🐱‍💻🐱‍🚀🙄👨‍🏫
           </p>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-6">
           {Data.map(
             (item: {
               dayTime: string;
