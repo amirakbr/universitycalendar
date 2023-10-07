@@ -1,13 +1,9 @@
 import { Vazirmatn } from "next/font/google";
 const VazirFont = Vazirmatn({ subsets: ["arabic"] });
-let StarterPointDate = new Date("2023-09-22T23:59:59.000Z").getTime();
-let TodayPointDate = new Date().getTime();
-let weekType =
-  Math.ceil((TodayPointDate - StarterPointDate) / (1000 * 3600 * 24) / 7) %
-    2 ===
-  1
-    ? "فرد"
-    : "زوج";
+let starterPoint = new Date("2023-09-23T01:00:00.000Z").getTime();
+let todayDate = new Date().getTime();
+let diffDaysPerMSec = new Date(todayDate - starterPoint).getTime();
+let weekType = Math.ceil(diffDaysPerMSec / (1000 * 60 * 60 * 24) / 7) % 2 === 1 ? "فرد" : "زوج";
 export default function Home() {
   const Data = [
     {
@@ -232,7 +228,11 @@ const DayTimeHoursContainer = ({
             <hr className="border-t w-full" />
             <p>{item?.title ?? "شرکت تشریف دارم"}</p>
             <hr className="border-t w-full" />
-            {item?.isEveryOtherWeek === weekType && <p className="text-sm absolute bottom-[95%] bg-green-900 text-white w-full left-0 rounded">این هفته این کلاس رو میرم</p>}
+            {item?.isEveryOtherWeek === weekType && (
+              <p className="text-sm absolute bottom-[95%] bg-green-900 text-white w-full left-0 rounded">
+                این هفته این کلاس رو میرم
+              </p>
+            )}
             {item?.isEveryOtherWeek ? (
               <span className="text-sm">
                 فقط هفته های {item.isEveryOtherWeek}
