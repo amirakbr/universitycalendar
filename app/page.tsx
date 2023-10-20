@@ -1,9 +1,15 @@
+"use client";
 import { Vazirmatn } from "next/font/google";
+import { useEffect, useState } from "react";
 const VazirFont = Vazirmatn({ subsets: ["arabic"] });
 let starterPoint = new Date("2023-09-23T01:00:00.000Z").getTime();
 let todayDate = new Date().getTime();
 let diffDaysPerMSec = new Date(todayDate - starterPoint).getTime();
-let weekType = Math.ceil(diffDaysPerMSec / (1000 * 60 * 60 * 24) / 7) % 2 === 1 ? "فرد" : "زوج";
+let weekType =
+  Math.ceil(diffDaysPerMSec / (1000 * 60 * 60 * 24) / 7) % 2 === 1
+    ? "زوج"
+    : "فرد";
+
 export default function Home() {
   const Data = [
     {
@@ -134,8 +140,12 @@ export default function Home() {
         {new Date().toLocaleDateString("fa-IR")} هستش و من کلاس{" "}
         <span className="text-lg font-medium border-b-2 border-b-black">
           {new Date().getDay() === 3 || new Date().getDay() === 5
-            ? "ندارم"
-            : "دارم"}
+            ? "ندارم "
+            : " دارم "}
+        </span>
+        <span>
+          تا به الان {Math.ceil(diffDaysPerMSec / (1000 * 60 * 60 * 24) / 7)}{" "}
+          هفته آموزشی را گذرانیده ام
         </span>
       </p>
       <span>این هفته ، هفته ی {weekType} میباشد</span>
