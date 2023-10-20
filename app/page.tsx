@@ -7,8 +7,8 @@ let todayDate = new Date().getTime();
 let diffDaysPerMSec = new Date(todayDate - starterPoint).getTime();
 let weekType =
   Math.ceil(diffDaysPerMSec / (1000 * 60 * 60 * 24) / 7) % 2 === 1
-    ? "زوج"
-    : "فرد";
+    ? "فرد"
+    : "زوج";
 
 export default function Home() {
   const Data = [
