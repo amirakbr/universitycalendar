@@ -26,16 +26,16 @@ export default function Home() {
         null,
         {
           title: "مطالعه درون شرکتی",
-          isEveryOtherWeek: "",
+          isEveryOtherWeek: "practice",
         },
         null,
         {
           title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "",
+          isEveryOtherWeek: "practice",
         },
         {
           title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "",
+          isEveryOtherWeek: "practice",
         },
       ],
     },
@@ -48,7 +48,7 @@ export default function Home() {
         },
         {
           title: "مطالعه درون شرکتی",
-          isEveryOtherWeek: "",
+          isEveryOtherWeek: "practice",
         },
         null,
         null,
@@ -62,7 +62,7 @@ export default function Home() {
         },
         {
           title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "",
+          isEveryOtherWeek: "practice",
         },
       ],
     },
@@ -72,7 +72,7 @@ export default function Home() {
         null,
         {
           title: "مطالعه درون شرکتی",
-          isEveryOtherWeek: "",
+          isEveryOtherWeek: "practice",
         },
         null,
         null,
@@ -86,7 +86,7 @@ export default function Home() {
         },
         {
           title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "",
+          isEveryOtherWeek: "practice",
         },
       ],
     },
@@ -106,11 +106,11 @@ export default function Home() {
         null,
         {
           title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "",
+          isEveryOtherWeek: "practice",
         },
         {
           title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "",
+          isEveryOtherWeek: "practice",
         },
       ],
     },
@@ -122,16 +122,16 @@ export default function Home() {
         null,
         {
           title: "مطالعه درون شرکتی",
-          isEveryOtherWeek: "",
+          isEveryOtherWeek: "practice",
         },
         null,
         {
           title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "",
+          isEveryOtherWeek: "practice",
         },
         {
           title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "",
+          isEveryOtherWeek: "practice",
         },
       ],
     },
@@ -158,7 +158,7 @@ export default function Home() {
         },
         {
           title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "",
+          isEveryOtherWeek: "practice",
         },
       ],
     },
@@ -171,27 +171,27 @@ export default function Home() {
         },
         {
           title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "",
+          isEveryOtherWeek: "practice",
         },
         {
           title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "",
+          isEveryOtherWeek: "practice",
         },
         {
           title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "",
+          isEveryOtherWeek: "practice",
         },
         {
           title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "",
+          isEveryOtherWeek: "practice",
         },
         {
           title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "",
+          isEveryOtherWeek: "practice",
         },
         {
           title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "",
+          isEveryOtherWeek: "practice",
         },
       ],
     },
@@ -224,7 +224,7 @@ export default function Home() {
           هفته آموزشی را گذرانیده ام
         </span>
       </p>
-      <p>
+      <p className="text-2xl border p-2 rounded">
         در تایم های مطالعه درون شرکتی بنده به مطالعه موارد تخصصی مربوط به کارم
         میپردازم ، مثلا در حال حاظر در حال انجام{" "}
         {"خواندن کتاب you dont know js"} هستم . در تایم های برون شرکتی هم همون
@@ -312,7 +312,13 @@ const DayTimeHoursContainer = ({
           <div
             className={`font-medium text-center border rounded p-2 w-full gap-2 grid grid-cols-1 relative grid-rows-[1fr_2px_1fr_2px_1fr] ${
               item?.title ? "bg-red-200" : "bg-green-200"
-            } ${item?.isEveryOtherWeek && "bg-yellow-200"}`}
+            } ${
+              item?.isEveryOtherWeek === "practice"
+                ? "practice"
+                : item?.isEveryOtherWeek
+                ? "bg-yellow-200"
+                : null
+            }`}
           >
             <p>
               {Number(timeSlotsHours[id] - 2).toLocaleString("fa-IR")} -{" "}
@@ -328,7 +334,9 @@ const DayTimeHoursContainer = ({
             )}
             {item?.isEveryOtherWeek ? (
               <span className="text-sm">
-                فقط هفته های {item.isEveryOtherWeek}
+                {item?.isEveryOtherWeek === "practice"
+                  ? "هر هفته 😍😎"
+                  : `فقط هفته های ${item.isEveryOtherWeek}`}
               </span>
             ) : item?.title ? (
               <span className="text-sm">متاسفانه باید هر هفته برم</span> ?? ""
