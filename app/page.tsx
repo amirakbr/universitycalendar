@@ -24,10 +24,19 @@ export default function Home() {
           isEveryOtherWeek: "زوج",
         },
         null,
+        {
+          title: "مطالعه درون شرکتی",
+          isEveryOtherWeek: "",
+        },
         null,
-        null,
-        null,
-        null,
+        {
+          title: "مطالعه برون شرکتی",
+          isEveryOtherWeek: "",
+        },
+        {
+          title: "مطالعه برون شرکتی",
+          isEveryOtherWeek: "",
+        },
       ],
     },
     {
@@ -37,7 +46,10 @@ export default function Home() {
           title: "اخلاق کاربردی",
           isEveryOtherWeek: "",
         },
-        null,
+        {
+          title: "مطالعه درون شرکتی",
+          isEveryOtherWeek: "",
+        },
         null,
         null,
         {
@@ -48,14 +60,20 @@ export default function Home() {
           title: "ریاضی 2",
           isEveryOtherWeek: "زوج",
         },
-        null,
+        {
+          title: "مطالعه برون شرکتی",
+          isEveryOtherWeek: "",
+        },
       ],
     },
     {
       dayTime: "دو شنبه",
       timeSlotsArray: [
         null,
-        null,
+        {
+          title: "مطالعه درون شرکتی",
+          isEveryOtherWeek: "",
+        },
         null,
         null,
         {
@@ -66,7 +84,10 @@ export default function Home() {
           title: "ریزپردازنده",
           isEveryOtherWeek: "زوج",
         },
-        null,
+        {
+          title: "مطالعه برون شرکتی",
+          isEveryOtherWeek: "",
+        },
       ],
     },
     {
@@ -83,13 +104,36 @@ export default function Home() {
           isEveryOtherWeek: "فرد",
         },
         null,
-        null,
-        null,
+        {
+          title: "مطالعه برون شرکتی",
+          isEveryOtherWeek: "",
+        },
+        {
+          title: "مطالعه برون شرکتی",
+          isEveryOtherWeek: "",
+        },
       ],
     },
     {
       dayTime: "چهار شنبه",
-      timeSlotsArray: [null, null, null, null, null, null, null],
+      timeSlotsArray: [
+        null,
+        null,
+        null,
+        {
+          title: "مطالعه درون شرکتی",
+          isEveryOtherWeek: "",
+        },
+        null,
+        {
+          title: "مطالعه برون شرکتی",
+          isEveryOtherWeek: "",
+        },
+        {
+          title: "مطالعه برون شرکتی",
+          isEveryOtherWeek: "",
+        },
+      ],
     },
     {
       dayTime: "پنج شنبه",
@@ -112,12 +156,44 @@ export default function Home() {
           title: "ساختمان داده",
           isEveryOtherWeek: "زوج",
         },
-        null,
+        {
+          title: "مطالعه برون شرکتی",
+          isEveryOtherWeek: "",
+        },
       ],
     },
     {
       dayTime: "جمعه",
-      timeSlotsArray: [null, null, null, null, null, null, null],
+      timeSlotsArray: [
+        {
+          title: "مطالعه برون شرکتی",
+          isEveryOtherWeek: "",
+        },
+        {
+          title: "مطالعه برون شرکتی",
+          isEveryOtherWeek: "",
+        },
+        {
+          title: "مطالعه برون شرکتی",
+          isEveryOtherWeek: "",
+        },
+        {
+          title: "مطالعه برون شرکتی",
+          isEveryOtherWeek: "",
+        },
+        {
+          title: "مطالعه برون شرکتی",
+          isEveryOtherWeek: "",
+        },
+        {
+          title: "مطالعه برون شرکتی",
+          isEveryOtherWeek: "",
+        },
+        {
+          title: "مطالعه برون شرکتی",
+          isEveryOtherWeek: "",
+        },
+      ],
     },
   ];
 
