@@ -2,7 +2,7 @@
 import { Vazirmatn } from "next/font/google";
 import { useEffect, useState } from "react";
 const VazirFont = Vazirmatn({ subsets: ["arabic"] });
-let starterPoint = new Date("2023-09-23T01:00:00.000Z").getTime();
+let starterPoint = new Date("2024-02-24T01:00:00.000Z").getTime();
 let todayDate = new Date().getTime();
 let diffDaysPerMSec = new Date(todayDate - starterPoint).getTime();
 let weekType =
@@ -28,155 +28,131 @@ export default function Home() {
       dayTime: "یکشنبه",
       timeSlotsArray: [
         {
-          title: "اخلاق کاربردی",
+          title: "توسعه بیزنس نوپا",
           isEveryOtherWeek: "",
         },
         {
-          title: "مطالعه درون شرکتی",
-          isEveryOtherWeek: "practice",
+          title: "توسعه بیزنس نوپا یا جوشکاری",
+          isEveryOtherWeek: "فرد",
+        },
+        {
+          title: "جوشکاری",
+          isEveryOtherWeek: "فرد",
         },
         null,
         null,
-        {
-          title: "ریاضی 2",
-          isEveryOtherWeek: "",
-        },
-        {
-          title: "ریاضی 2",
-          isEveryOtherWeek: "زوج",
-        },
-        {
-          title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "practice",
-        },
+        null,
+        null,
       ],
     },
     {
       dayTime: "دو شنبه",
       timeSlotsArray: [
-        null,
         {
-          title: "مطالعه درون شرکتی",
-          isEveryOtherWeek: "practice",
-        },
-        null,
-        null,
-        {
-          title: "ریزپردازنده",
+          title:"محاسبات عددی",
           isEveryOtherWeek: "",
         },
         {
-          title: "ریزپردازنده",
-          isEveryOtherWeek: "زوج",
+          title:"💩 اندیشه 2 💩",
+          isEveryOtherWeek: "",
         },
-        {
-          title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "practice",
-        },
+        null,
+        null,
+        null,
+        null,
+        null,
       ],
     },
     {
       dayTime: "سه شنبه",
       timeSlotsArray: [
-        null,
-        null,
         {
-          title: "فیزیک دو",
+          title: "جبر خطی",
           isEveryOtherWeek: "",
         },
         {
-          title: "فیزیک دو",
+          title: "جبر خطی",
           isEveryOtherWeek: "فرد",
         },
         null,
         {
-          title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "practice",
+          title: "آزمایشگاه سیستم عامل",
+          isEveryOtherWeek: "",
         },
-        {
-          title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "practice",
-        },
+        null,
+        null,
+        null,
       ],
     },
     {
       dayTime: "چهار شنبه",
       timeSlotsArray: [
         null,
-        null,
-        null,
         {
-          title: "مطالعه درون شرکتی",
-          isEveryOtherWeek: "practice",
-        },
-        null,
-        {
-          title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "practice",
+          title: "خوده سیستم عامل",
+          isEveryOtherWeek: "",
         },
         {
-          title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "practice",
+          title: "خوده سیستم عامل",
+          isEveryOtherWeek: "فرد",
         },
+        null,
+        null,
+        null,
+        null,
       ],
     },
     {
       dayTime: "پنج شنبه",
       timeSlotsArray: [
-        {
-          title: "نظریه زبان",
-          isEveryOtherWeek: "",
-        },
-        {
-          title: "نظریه زبان",
-          isEveryOtherWeek: "زوج",
-        },
+        null,
         null,
         null,
         {
-          title: "ساختمان داده",
+          title: "شبکه ها کامپیوتر",
           isEveryOtherWeek: "",
         },
         {
-          title: "ساختمان داده",
+          title: "شبکه ها کامپیوتر",
           isEveryOtherWeek: "زوج",
         },
         {
-          title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "practice",
+          title: "آزمایشگاه شبکه های کامپیوتری",
+          isEveryOtherWeek: "",
         },
+
       ],
     },
     {
       dayTime: "جمعه",
       timeSlotsArray: [
         {
-          title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "",
+          title: "کلپچ یه بناگوش دو تا زبون + پیاز",
+          isEveryOtherWeek: "offDay",
         },
         {
-          title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "practice",
+          title: "خواب بعد کلپچ",
+          isEveryOtherWeek: "offDay",
         },
         {
-          title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "practice",
+          title: "استراحت بعد کلپچ",
+          isEveryOtherWeek: "offDay",
         },
         {
-          title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "practice",
+          title: "مطالعه از روی roadmap.sh",
+          isEveryOtherWeek: "offDay",
         },
         {
-          title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "practice",
+          title: "مطالعه از روی roadmap.sh",
+          isEveryOtherWeek: "offDay",
         },
         {
-          title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "practice",
+          title: "گاهی جلسات adplist و گاهی کتاب",
+          isEveryOtherWeek: "offDay",
         },
         {
-          title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "practice",
+          title: "مطالعه کتاب",
+          isEveryOtherWeek: "offDay",
         },
       ],
     },
@@ -208,13 +184,6 @@ export default function Home() {
           تا به الان {Math.ceil(diffDaysPerMSec / (1000 * 60 * 60 * 24) / 7)}{" "}
           هفته آموزشی را گذرانیده ام
         </span>
-      </p>
-      <p className="text-2xl border p-2 rounded">
-        در تایم های مطالعه درون شرکتی بنده به مطالعه موارد تخصصی مربوط به کارم
-        میپردازم ، مثلا در حال حاظر در حال انجام{" "}
-        {"خواندن کتاب you dont know js"} هستم . در تایم های برون شرکتی هم همون
-        موارد میپردازم صرفا درون و برون شرکت رو جدا کردم تا اگر مخالفتی با
-        مطالعه بنده در تایم های درون شرکت هست من را مطلع کنند
       </p>
       <span>این هفته ، هفته ی {weekType} میباشد</span>
       <div className="flex items-center gap-4">
@@ -256,7 +225,7 @@ export default function Home() {
         </div>
       </div>
       <p className="text-sm">
-        در ابتدا باید گفت این برنامه هفتگی هیچ کاربردی ندارد و صرفا بابت مطلع
+        این برنامه هفتگی هیچ کاربردی ندارد و صرفا بابت مطلع
         کردن خودم و همکارانم ساخته شده است
       </p>
     </div>
@@ -289,7 +258,7 @@ const DayTimeHoursContainer = ({
 }: {
   timeSlotsArray?: { title: string; isEveryOtherWeek: string }[] | any;
 }) => {
-  const timeSlotsHours = [10, 12, 14, 16, 18, 20, 22];
+  const timeSlotsHours = [8,10, 12, 14, 16, 18, 20, 21];
   return (
     <div className="grid grid-cols-7 gap-2">
       {timeSlotsArray &&
@@ -298,7 +267,7 @@ const DayTimeHoursContainer = ({
             className={`font-medium text-center border rounded p-2 w-full gap-2 grid grid-cols-1 relative grid-rows-[1fr_2px_1fr_2px_1fr] ${
               item?.title ? "bg-red-200" : "bg-green-200"
             } ${
-              item?.isEveryOtherWeek === "practice"
+              item?.isEveryOtherWeek === "practice" || item?.isEveryOtherWeek === "offDay"
                 ? "practice"
                 : item?.isEveryOtherWeek
                 ? "bg-yellow-200"
@@ -306,8 +275,8 @@ const DayTimeHoursContainer = ({
             }`}
           >
             <p>
-              {Number(timeSlotsHours[id] - 2).toLocaleString("fa-IR")} -{" "}
-              {Number(timeSlotsHours[id]).toLocaleString("fa-IR")}
+              {Number(timeSlotsHours[id]).toLocaleString("fa-IR")} -{" "}
+              {Number(timeSlotsHours[id+1]).toLocaleString("fa-IR")}
             </p>
             <hr className="border-t w-full" />
             <p>{item?.title ?? "شرکت تشریف دارم"}</p>
@@ -319,7 +288,7 @@ const DayTimeHoursContainer = ({
             )}
             {item?.isEveryOtherWeek ? (
               <span className="text-sm">
-                {item?.isEveryOtherWeek === "practice"
+                {item?.isEveryOtherWeek === "practice" || item?.isEveryOtherWeek === "offDay"
                   ? "هر هفته 😍😎"
                   : `فقط هفته های ${item.isEveryOtherWeek}`}
               </span>
