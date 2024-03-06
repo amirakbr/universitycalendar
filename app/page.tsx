@@ -15,28 +15,13 @@ export default function Home() {
     {
       dayTime: "شنبه",
       timeSlotsArray: [
-        {
-          title: "دیفرانسیل",
-          isEveryOtherWeek: "",
-        },
-        {
-          title: "دیفرانسیل",
-          isEveryOtherWeek: "زوج",
-        },
         null,
-        {
-          title: "مطالعه درون شرکتی",
-          isEveryOtherWeek: "practice",
-        },
         null,
-        {
-          title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "practice",
-        },
-        {
-          title: "مطالعه برون شرکتی",
-          isEveryOtherWeek: "practice",
-        },
+        null,
+        null,
+        null,
+        null,
+        null,
       ],
     },
     {
