@@ -75,11 +75,11 @@ export default function Home() {
           isEveryOtherWeek: "فرد",
         },
         null,
+        null,
         {
           title: "آزمایشگاه سیستم عامل",
           isEveryOtherWeek: "",
         },
-        null,
         null,
         null,
       ],
