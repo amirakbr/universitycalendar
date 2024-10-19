@@ -246,7 +246,7 @@ const DayTimeHoursContainer = ({ timeSlotsArray }: { timeSlotsArray?: { title: s
                   : `فقط هفته های ${item.isEveryOtherWeek}`}
               </span>
             ) : item?.title ? (
-              <span className="text-sm">متاسفانه باید هر هفته برم</span> ?? ''
+              <span className="text-sm">متاسفانه باید هر هفته برم</span>
             ) : (
               <span className="text-sm">در محل شرکت حضور دارم</span>
             )}
