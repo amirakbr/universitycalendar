@@ -1,7 +1,7 @@
 'use client';
 import { Vazirmatn } from 'next/font/google';
 const VazirFont = Vazirmatn({ subsets: ['arabic'] });
-let starterPoint = new Date('2024-09-22T01:00:00.000Z').getTime();
+let starterPoint = new Date('2024-09-20T23:59:00.000Z').getTime();
 let todayDate = new Date().getTime();
 let diffDaysPerMSec = new Date(todayDate - starterPoint).getTime();
 let weekType = Math.ceil(diffDaysPerMSec / (1000 * 60 * 60 * 24) / 7) % 2 === 1 ? 'فرد' : 'زوج';
