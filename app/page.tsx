@@ -15,11 +15,11 @@ export default function Home() {
           title: 'مدیریت پروژه',
           isEveryOtherWeek: '',
         },
+        null,
         {
           title: 'آز مدار الکتریکی',
           isEveryOtherWeek: '',
         },
-        null,
         null,
         {
           title: 'ریزپردازنده',
