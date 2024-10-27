@@ -109,23 +109,23 @@ export default function Home() {
       dayTime: 'جمعه',
       timeSlotsArray: [
         {
-          title: 'کلپچ یه بناگوش دو تا زبون + پیاز',
+          title: 'حضور در شرکت در صورت صلاحدید',
           isEveryOtherWeek: 'offDay',
         },
         {
-          title: 'خواب بعد کلپچ',
+          title: 'حضور در شرکت در صورت صلاحدید',
           isEveryOtherWeek: 'offDay',
         },
         {
-          title: 'استراحت بعد کلپچ',
+          title: 'حضور در شرکت در صورت صلاحدید',
           isEveryOtherWeek: 'offDay',
         },
         {
-          title: 'مطالعه از روی roadmap.sh',
+          title: 'حضور در شرکت در صورت صلاحدید',
           isEveryOtherWeek: 'offDay',
         },
         {
-          title: 'مطالعه از روی roadmap.sh',
+          title: 'حضور در شرکت در صورت صلاحدید',
           isEveryOtherWeek: 'offDay',
         },
         {
@@ -234,7 +234,7 @@ const DayTimeHoursContainer = ({ timeSlotsArray }: { timeSlotsArray?: { title: s
               {Number(timeSlotsHours[id]).toLocaleString('fa-IR')} - {Number(timeSlotsHours[id + 1]).toLocaleString('fa-IR')}
             </p>
             <hr className="border-t w-full" />
-            <p>{item?.title ?? 'شرکت تشریف دارم'}</p>
+            <p>{item?.title ?? 'شرکت هستم'}</p>
             <hr className="border-t w-full" />
             {item?.isEveryOtherWeek === weekType && (
               <p className="text-sm absolute bottom-[95%] bg-green-900 text-white w-full left-0 rounded">این هفته این کلاس رو میرم</p>
