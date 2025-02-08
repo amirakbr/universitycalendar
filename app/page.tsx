@@ -11,56 +11,42 @@ export default function Home() {
     {
       dayTime: 'شنبه',
       timeSlotsArray: [
-        {
-          title: 'مدیریت پروژه',
-          isEveryOtherWeek: '',
-        },
         null,
         {
-          title: 'آز مدار الکتریکی',
+          title: 'مباحث',
           isEveryOtherWeek: '',
+        },
+        {
+          title: 'مباحث',
+          isEveryOtherWeek: 'فرد',
         },
         null,
-        {
-          title: 'ریزپردازنده',
-          isEveryOtherWeek: '',
-        },
+        null,
         null,
         null,
       ],
     },
     {
       dayTime: 'یکشنبه',
-      timeSlotsArray: [
-        {
-          title: 'معادلات دیفرانسیل',
-          isEveryOtherWeek: '',
-        },
-        {
-          title: 'معادلات دیفرانسیل',
-          isEveryOtherWeek: 'فرد',
-        },
-        null,
-        null,
-        null,
-        {
-          title: 'مباحث ویژه',
-          isEveryOtherWeek: '',
-        },
-        null,
-      ],
+      timeSlotsArray: [null, null, null, null, null, null, null],
     },
     {
       dayTime: 'دو شنبه',
       timeSlotsArray: [
         {
-          title: 'محاسبات عددی',
+          title: 'آمار احتمال ( احتمالا خذفش کنم)',
           isEveryOtherWeek: '',
+        },
+        {
+          title: 'آمار احتمال ( احتمالا خذفش کنم)',
+          isEveryOtherWeek: ' فرد',
         },
         null,
         null,
-        null,
-        null,
+        {
+          title: 'عندیشه',
+          isEveryOtherWeek: '',
+        },
         null,
         null,
       ],
@@ -70,16 +56,16 @@ export default function Home() {
       timeSlotsArray: [
         null,
         null,
-        null,
-        null,
         {
-          title: 'هوش محاسباتی',
-          isEveryOtherWeek: 'زوج',
-        },
-        {
-          title: 'هوش محاسباتی',
+          title: 'روش پژوهش آبجیه باهامون نمیریم',
           isEveryOtherWeek: '',
         },
+        null,
+        {
+          title: 'مبانی امنیت',
+          isEveryOtherWeek: '',
+        },
+        null,
         null,
       ],
     },
@@ -87,23 +73,39 @@ export default function Home() {
       dayTime: 'چهار شنبه',
       timeSlotsArray: [
         null,
-        null,
-        null,
         {
-          title: 'ریزپردازنده',
-          isEveryOtherWeek: 'فرد',
-        },
-        {
-          title: 'آز ریزپردازنده',
+          title: 'مبانی هوش حظور غیاب نمیکنه آبجیه',
           isEveryOtherWeek: '',
         },
+        {
+          title: 'مبانی هوش حظور غیاب نمیکنه آبجیه',
+          isEveryOtherWeek: 'زوج',
+        },
+        null,
+        null,
         null,
         null,
       ],
     },
     {
       dayTime: 'پنج شنبه',
-      timeSlotsArray: [null, null, null, null, null, null],
+      timeSlotsArray: [
+        {
+          title: 'آز معماری )سر کلاس نمیریم(',
+          isEveryOtherWeek: '',
+        },
+        {
+          title: 'اینرتنت اشیا',
+          isEveryOtherWeek: 'فرد',
+        },
+        {
+          title: 'اینترنت اشیا',
+          isEveryOtherWeek: '',
+        },
+        null,
+        null,
+        null,
+      ],
     },
     {
       dayTime: 'جمعه',
