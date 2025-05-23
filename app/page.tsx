@@ -13,12 +13,12 @@ export default function Home() {
       timeSlotsArray: [
         null,
         {
-          title: 'مباحث',
-          isEveryOtherWeek: '',
+          title: 'دیفرانسیل',
+          isEveryOtherWeek: 'زوج',
         },
         {
-          title: 'مباحث',
-          isEveryOtherWeek: 'فرد',
+          title: 'دیفرانسیل',
+          isEveryOtherWeek: '',
         },
         null,
         null,
@@ -55,9 +55,12 @@ export default function Home() {
       dayTime: 'سه شنبه',
       timeSlotsArray: [
         null,
-        null,
         {
-          title: 'روش پژوهش آبجیه باهامون نمیریم',
+          title: 'برنامه نویسی دستگاه سیار',
+          isEveryOtherWeek: '',
+        },
+        {
+          title: 'روش پژوهش یم',
           isEveryOtherWeek: '',
         },
         null,
