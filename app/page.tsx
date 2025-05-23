@@ -34,12 +34,12 @@ export default function Home() {
       dayTime: 'دو شنبه',
       timeSlotsArray: [
         {
-          title: 'آمار احتمال ( احتمالا خذفش کنم)',
+          title: '',
           isEveryOtherWeek: '',
         },
         {
-          title: 'آمار احتمال ( احتمالا خذفش کنم)',
-          isEveryOtherWeek: ' فرد',
+          title: '',
+          isEveryOtherWeek: '',
         },
         null,
         null,
