@@ -44,7 +44,7 @@ export default function Home() {
         null,
         null,
         {
-          title: 'عندیشه',
+          title: 'اندیشه',
           isEveryOtherWeek: '',
         },
         null,
